@@ -1,3 +1,6 @@
+# frozen_string_literal: true
+
+# Add counter to Reviews Migration
 class AddReviewsCountToUsers < ActiveRecord::Migration[6.0]
   def self.up
     add_column :users, :reviews_count, :integer, null: false, default: 0

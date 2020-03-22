@@ -1,0 +1,28 @@
+AllCops:
+  TargetRubyVersion: '2.6.5'
+  Exclude:
+    - lib/templates/active_record/**/*
+    - lib/templates/rails/**/*
+    - lib/templates_originals/**/*
+    - node_modules/**/*
+    - bin/**/*
+    - db/schema.rb
+    - Rakefile
+    - config/initializers/content_security_policy.rb
+    - db/migrate/20191006051629_create_active_storage_tables.active_storage.rb
+    - lib/i18n/create_i18n.rb
+    - spec/modules/helpers/format/format_datetime_spec.rb
+Layout/LineLength:
+  Max: 100
+Metrics/BlockLength:
+  Max: 40   
+Metrics/MethodLength:
+  Max: 15
+Security/Eval:
+  Enabled: false
+Style/HashEachMethods:
+  Enabled: false
+Style/HashTransformKeys:
+  Enabled: false
+Style/HashTransformValues:
+  Enabled: false

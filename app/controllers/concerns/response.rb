@@ -1,3 +1,6 @@
+# frozen_string_literal: true
+
+# Response Concern
 module Response
   def json_response(message, success, data, status)
     render json: {

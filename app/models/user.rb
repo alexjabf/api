@@ -1,3 +1,6 @@
+# frozen_string_literal: true
+
+# User Model
 class User < ApplicationRecord
   has_many :reviews, dependent: :destroy
   acts_as_token_authenticatable
